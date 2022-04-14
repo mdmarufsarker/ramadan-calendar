@@ -1,21 +1,71 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div>
+    <h1>Ramadan Calendar 2022</h1>
+    <hr />
+    <hr />
+    <div class="container">
+      <Rahmat />
+      <Magfirat />
+      <Najat />
+    </div>
+    <footer>
+      <h3>© 2022 Copyright | All rights reserved | Md. Maruf Sarker</h3>
+    </footer>
+  </div>
 </template>
 
+<script>
+// import components
+import Rahmat from "./components/Rahmat.vue";
+import Magfirat from "./components/Magfirat.vue";
+import Najat from "./components/Najat.vue";
+
+export default {
+  components: {
+    Rahmat,
+    Magfirat,
+    Najat,
+  },
+  data() {
+    return {};
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Itim", cursive;
+  background-color: dodgerblue;
+}
+h1 {
+  color: #fff;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 20px;
+}
+hr {
+  height: 2px;
+  width: 300px;
+  margin: 3px auto;
+  background-color: #000;
+  border: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+h3 {
+  color: cyan;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 </style>
