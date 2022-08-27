@@ -3,19 +3,23 @@
     <h2>10 days of Najat</h2>
     <div class="wrapper">
       <div class="parent">
+        <span class="title">Count</span>
         <div class="count child" v-for="count in counts" :key="count">
           {{ count }}
         </div>
       </div>
       <div class="parent">
+        <span class="title">Days</span>
         <div class="day child" v-for="day in days" :key="day">{{ day }}</div>
       </div>
       <div class="parent">
+        <span class="title">Seheri</span>
         <div class="seheri child" v-for="seheri in seheri" :key="seheri">
           {{ seheri }}
         </div>
       </div>
       <div class="parent">
+        <span class="title">Iftar</span>
         <div class="iftar child" v-for="iftar in iftar" :key="iftar">
           {{ iftar }}
         </div>
@@ -30,9 +34,6 @@ export default {
     return {
       counts: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
       days: [
-        "Sunday",
-        "Monday",
-        "Tuesday",
         "Wednesday",
         "Thursday",
         "Friday",
@@ -40,30 +41,33 @@ export default {
         "Sunday",
         "Monday",
         "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
       ],
       seheri: [
-        "04:05",
-        "04:05",
-        "04:04",
-        "04:03",
-        "04:02",
-        "04:01",
-        "04:00",
-        "03:59",
-        "03:58",
-        "03:59",
+        "04:18",
+        "04:16",
+        "04:15",
+        "04:14",
+        "04:13",
+        "04:12",
+        "04:11",
+        "03:10",
+        "03:09",
+        "03:08",
       ],
       iftar: [
-        "06:18",
-        "06:28",
-        "06:29",
-        "06:29",
-        "06:29",
-        "06:30",
-        "06:30",
-        "06:31",
-        "06:31",
-        "06:32",
+        "06:23",
+        "06:23",
+        "06:23",
+        "06:24",
+        "06:24",
+        "06:24",
+        "06:25",
+        "06:25",
+        "06:26",
+        "06:26",
       ],
     };
   },

@@ -63,7 +63,6 @@ hr {
   flex-wrap: wrap;
 }
 h3 {
-  color: cyan;
   text-align: center;
   font-weight: 400;
   margin-bottom: 10px;
