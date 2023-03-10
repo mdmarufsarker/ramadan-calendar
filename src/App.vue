@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Ramadan Calendar 2022</h1>
+    <h1>Ramadan Calendar 2023</h1>
     <hr />
     <hr />
     <div class="container">
