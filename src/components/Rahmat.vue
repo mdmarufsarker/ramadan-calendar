@@ -3,9 +3,15 @@
         <h2>10 days of Rahmat</h2>
         <div class="wrapper">
             <div class="parent">
-                <span class="title">Count</span>
+                <span class="title">No.</span>
                 <div class="count child" v-for="count in counts" :key="count">
                     {{ count }}
+                </div>
+            </div>
+            <div class="parent">
+                <span class="title">Dates</span>
+                <div class="dates child" v-for="date in dates" :key="date">
+                    {{ date }}
                 </div>
             </div>
             <div class="parent">
@@ -39,6 +45,18 @@ export default {
     data() {
         return {
             counts: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            dates: [
+                "23 March",
+                "24 March",
+                "25 March",
+                "26 March",
+                "27 March",
+                "28 March",
+                "29 March",
+                "30 March",
+                "31 March",
+                "01 April",
+            ],
             days: [
                 "Thursday",
                 "Friday",
@@ -90,12 +108,12 @@ export default {
     text-decoration: underline;
 }
 .rahmat {
-    width: 400px;
+    width: 500px;
     background-color: cyan;
     margin: 20px;
     border-radius: 10px;
     text-align: center;
-    padding: 15px auto;
+    padding: 25px auto;
 }
 .rahmat h2 {
     font-size: 25px;
@@ -122,7 +140,7 @@ export default {
         font-size: 1.2rem;
     }
     .rahmat {
-        width: 350px;
+        width: 400px;
         margin: 15px 10px;
     }
 
@@ -141,7 +159,7 @@ export default {
         font-size: 1rem;
     }
     .rahmat {
-        width: 250px;
+        width: 300px;
         margin: 15px 10px;
     }
 

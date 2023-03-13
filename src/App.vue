@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Ramadan Calendar 2023</h1>
+        <h1>Ramadan Calendar {{ year }}</h1>
         <hr />
         <hr />
         <div class="container">
@@ -9,7 +9,7 @@
             <Najat />
         </div>
         <footer>
-            <h3>© 2022 Copyright | All rights reserved | Md. Maruf Sarker</h3>
+            <h3>© {{ year }} Contributed by - Md. Maruf Sarker & Saadman Galib</h3>
         </footer>
     </div>
 </template>
@@ -20,6 +20,8 @@ import Rahmat from "./components/Rahmat.vue";
 import Magfirat from "./components/Magfirat.vue";
 import Najat from "./components/Najat.vue";
 
+const year = new Date().getFullYear();
+
 export default {
     components: {
         Rahmat,
@@ -27,7 +29,9 @@ export default {
         Najat,
     },
     data() {
-        return {};
+        return {
+            year,
+        };
     },
 };
 </script>

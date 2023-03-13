@@ -3,9 +3,15 @@
     <h2>10 days of Magfirat</h2>
     <div class="wrapper">
       <div class="parent">
-        <span class="title">Count</span>
+        <span class="title">No.</span>
         <div class="count child" v-for="count in counts" :key="count">
           {{ count }}
+        </div>
+      </div>
+      <div class="parent">
+        <span class="title">Dates</span>
+        <div class="dates child" v-for="date in dates" :key="date">
+          {{ date }}
         </div>
       </div>
       <div class="parent">
@@ -33,6 +39,18 @@ export default {
   data() {
     return {
       counts: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      dates: [
+        "02 April",
+        "03 April",
+        "04 April",
+        "05 April",
+        "06 April",
+        "07 April",
+        "08 April",
+        "09 April",
+        "10 April",
+        "11 April",
+      ],
       days: [
         "Sunday",
         "Monday",

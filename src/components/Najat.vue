@@ -3,9 +3,15 @@
     <h2>10 days of Najat</h2>
     <div class="wrapper">
       <div class="parent">
-        <span class="title">Count</span>
+        <span class="title">No.</span>
         <div class="count child" v-for="count in counts" :key="count">
           {{ count }}
+        </div>
+      </div>
+      <div class="parent">
+        <span class="title">Dates</span>
+        <div class="dates child" v-for="date in dates" :key="date">
+          {{ date }}
         </div>
       </div>
       <div class="parent">
@@ -33,6 +39,18 @@ export default {
   data() {
     return {
       counts: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+      dates: [
+        "12 April",
+        "13 April",
+        "14 April",
+        "15 April",
+        "16 April",
+        "17 April",
+        "18 April",
+        "19 April",
+        "20 April",
+        "21 April",
+      ],
       days: [
         "Wednesday",
         "Thursday",
