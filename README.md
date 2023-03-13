@@ -1,7 +1,14 @@
-# Vue 3 + Vite
+# Ramadan Calendar
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a simple calendar for the holy month of Ramadan. It is built using Vue3 with html and css.
 
-## Recommended IDE Setup
+## Usage
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- Clone the repo `git clone https://github.com/mdmarufsarker/ramadan-calendar.git`
+- Run `npm install`
+- Run `npm run dev`
+- Open `http://localhost:3000/` in your browser
+
+## Website Demo [Ramadan Calendar](https://ramadan-calendar.netlify.app)
+
+![Ramadan Calendar](./src/assets/calendar.png)
