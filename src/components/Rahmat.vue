@@ -46,7 +46,6 @@ export default {
         return {
             counts: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
             dates: [
-                "23 March",
                 "24 March",
                 "25 March",
                 "26 March",
@@ -56,9 +55,9 @@ export default {
                 "30 March",
                 "31 March",
                 "01 April",
+                "02 April",
             ],
             days: [
-                "Thursday",
                 "Friday",
                 "Saturday",
                 "Sunday",
@@ -68,9 +67,9 @@ export default {
                 "Thursday",
                 "Friday",
                 "Saturday",
+                "Sunday",
             ],
             seheri: [
-                "04:39",
                 "04:38",
                 "04:37",
                 "04:36",
@@ -80,17 +79,18 @@ export default {
                 "04:31",
                 "04:30",
                 "04:29",
+                "04:28",
             ],
             iftar: [
                 "06:14",
                 "06:14",
-                "06:14",
                 "06:15",
                 "06:15",
                 "06:16",
                 "06:16",
                 "06:17",
                 "06:17",
+                "06:18",
                 "06:18",
             ],
         };
