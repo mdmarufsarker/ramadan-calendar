@@ -12,7 +12,8 @@
     <!--        <h3>© {{ year }} Contributed by - Md. Maruf Sarker & Saadman Galib</h3>-->
     <!--    </footer>-->
     <!--</div>-->
-    <ComingSoon/>
+
+        <ComingSoon/>
 </template>
 
 <script>
@@ -66,6 +67,12 @@ hr {
     margin: 3px auto;
     background-color: #000;
     border: none;
+}
+
+.main-container{
+    min-height: 100vh;
+    width: 60%;
+    margin: auto;
 }
 
 .container {
