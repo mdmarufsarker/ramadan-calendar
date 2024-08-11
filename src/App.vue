@@ -1,36 +1,41 @@
 <template>
-    <div>
-        <h1>Ramadan Calendar {{ year }}</h1>
-        <hr />
-        <hr />
-        <div class="container">
-            <Rahmat />
-            <Magfirat />
-            <Najat />
-        </div>
-        <footer>
-            <h3>© {{ year }} Contributed by - Md. Maruf Sarker & Saadman Galib</h3>
-        </footer>
-    </div>
+    <!--<div>-->
+    <!--    <h1>Ramadan Calendar {{ year }}</h1>-->
+    <!--    <hr />-->
+    <!--    <hr />-->
+    <!--    <div class="container">-->
+    <!--        <Rahmat />-->
+    <!--        <Magfirat />-->
+    <!--        <Najat />-->
+    <!--    </div>-->
+    <!--    <footer>-->
+    <!--        <h3>© {{ year }} Contributed by - Md. Maruf Sarker & Saadman Galib</h3>-->
+    <!--    </footer>-->
+    <!--</div>-->
+
+        <ComingSoon/>
 </template>
 
 <script>
 // import components
-import Rahmat from "./components/Rahmat.vue";
-import Magfirat from "./components/Magfirat.vue";
-import Najat from "./components/Najat.vue";
+//import Rahmat from "./components/Rahmat.vue";
+//import Magfirat from "./components/Magfirat.vue";
+//import Najat from "./components/Najat.vue";
+//
+//const year = new Date().getFullYear();
 
-const year = new Date().getFullYear();
+import ComingSoon from "./pages/ComingSoon/ComingSoon.vue";
 
 export default {
     components: {
-        Rahmat,
-        Magfirat,
-        Najat,
+//        Rahmat,
+//        Magfirat,
+//        Najat,
+        ComingSoon
     },
     data() {
         return {
-            year,
+//            year,
         };
     },
 };
@@ -38,20 +43,24 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Itim", cursive;
-    background-color: dodgerblue;
+    /*    background-color: dodgerblue;*/
 }
+
 h1 {
     color: #fff;
     text-align: center;
     padding-top: 20px;
 }
+
 hr {
     height: 2px;
     width: 300px;
@@ -59,6 +68,13 @@ hr {
     background-color: #000;
     border: none;
 }
+
+.main-container{
+    min-height: 100vh;
+    width: 60%;
+    margin: auto;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -66,6 +82,7 @@ hr {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 h3 {
     text-align: center;
     font-weight: 400;
@@ -98,9 +115,11 @@ h3 {
         width: 90%;
         margin: auto;
     }
+
     h1 {
         font-size: 28px;
     }
+
     hr {
         height: 1.3px;
         width: 90%;
